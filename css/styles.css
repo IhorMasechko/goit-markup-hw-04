@@ -153,9 +153,19 @@ color: var(--nav-text-color);
 
 
 .main {
-    background-color: #2F303A;
-    background-image: url(../images/hero.jpg);
+    background-color: #C4C4C4;
+    background-image:
+    linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 1600px;
+    max-height: 600px;
 }
 
 
@@ -453,6 +463,27 @@ color: var(--nav-text-color);
 .text-advantages {
     width: 270px;
 
+}
+
+.text-advantages::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--button-text-background);
+    
+    margin-bottom: 30px;
+
+}
+
+.text-advantages:nth-child(1)::before{
+    background-image: url(../images/icon1.jpg);
+}
+
+.text-advantages:nth-child(2)::before{
+    background-image: url(../images/icons.svg#icon-smartphone);
 }
 
 
