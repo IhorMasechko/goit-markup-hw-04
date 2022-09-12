@@ -5,6 +5,7 @@
   --nav-text-color: #2196f3;
   --adress-text-color: rgba(255, 255, 255, 0.6);
   --button-text-background: #f5f4fa;
+  --button-active-background: #188ce8;
 }
 
 .container {
@@ -200,7 +201,7 @@ img {
 
 .button-main:hover,
 .button-main:focus {
-  color: var(--main-text-color);
+  background-color: var(--button-active-background);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -433,10 +434,11 @@ img {
 }
 
 .text-advantages:nth-child(1)::before {
-  background-image: url(../images/icons.svg#'icon-antenna');
+  background-image: url(../images/icons.svg#icon-antenna);
 }
 
 .text-advantages:nth-child(2)::before {
+  background-image: url(../images/icon1.jpg);
 }
 
 .list-img {
