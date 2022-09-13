@@ -502,24 +502,24 @@ img {
   gap: 30px;
 }
 
-.border-clients {
+.box-clients {
   width: 170px;
   height: 92px;
   border: 1px solid var(--svg-link-color);
   border-radius: 4px;
 }
 
-.svg-clients {
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-bottom: 16px;
+.clients-svg {
   margin-top: 16px;
+  margin-bottom: 16px;
+  margin-right: 32px;
+  margin-left: 32px;
 }
 
-.border-clients:hover,
-.border-clients:focus {
-  border-color: var(--nav-text-color);
+.box-clients:hover,
+.box-clients:focus {
   fill: var(--nav-text-color);
+  border-color: var(--nav-text-color);
 }
 
 .text-join {
