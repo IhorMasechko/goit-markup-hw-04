@@ -134,12 +134,16 @@ img {
 
 .link {
   color: var(--secondary-text-color);
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  fill: #757575;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--nav-text-color);
+  fill: var(--nav-text-color);
 }
 
 .link-svg {
@@ -147,10 +151,9 @@ img {
   fill: var(--svg-link-color);
 }
 
-.link:hover,
-.link:focus {
-  color: var(--nav-text-color);
-  fill: var(--nav-text-color);
+.link-svg:hover,
+.link-svg:focus {
+  /* fill: var(--nav-text-color); */
 }
 
 .link-header {
@@ -510,17 +513,21 @@ img {
   border-radius: 4px;
 }
 
-.clients-svg {
-  margin-top: 16px;
-  margin-bottom: 16px;
-  margin-right: 32px;
-  margin-left: 32px;
-  /* fill: var(--svg-link-color); */
-}
-
 .box-clients:hover,
 .box-clients:focus {
   border-color: var(--nav-text-color);
+}
+
+.clients-svg {
+  fill: var(--svg-link-color);
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.clients-svg:hover,
+.clients-svg:focus {
   fill: var(--nav-text-color);
 }
 
