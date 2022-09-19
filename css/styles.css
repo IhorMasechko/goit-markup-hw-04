@@ -79,6 +79,7 @@ button {
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
+  margin-right: 93px;
   color: var(--nav-text-color);
 }
 
@@ -96,7 +97,6 @@ button {
 
 .logo-top {
   color: var(--main-text-color);
-  margin-right: 93px;
 }
 
 .logo-buttom {
