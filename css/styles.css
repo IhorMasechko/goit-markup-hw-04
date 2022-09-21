@@ -27,7 +27,6 @@ body {
   color: var(--main-text-color);
   font-family: roboto, sans-serif;
   letter-spacing: 0.03em;
-  width: 1600px;
 }
 
 ul {
@@ -135,22 +134,16 @@ button {
 .contacts-top {
   display: flex;
   align-items: center;
-}
-
-.contacts-bloc {
-  margin-right: 30px;
-}
-
-.contacts-bloc:last-child {
-  margin-right: 0px;
+  gap: 30px;
 }
 
 .link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--secondary-text-color);
@@ -183,8 +176,10 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
   max-width: 1600px;
-  max-height: 600px;
+  margin: 0 auto;
 }
 
 .main-title {
@@ -408,11 +403,6 @@ button {
   margin: -1px;
 }
 
-.main {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
 .img-portfolio {
   display: block;
   max-width: 100%;
@@ -440,7 +430,12 @@ button {
   gap: 30px;
 }
 
-.cards:hover {
+.cards {
+  display: block;
+}
+
+.cards:hover,
+.cards:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -538,28 +533,27 @@ button {
   gap: 30px;
 }
 
-.box-clients {
+.link-clients {
+  display: flex;
   width: 170px;
   height: 92px;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--svg-link-color);
   border-radius: 4px;
 }
 
-.box-clients:hover,
-.box-clients:focus {
+.link-clients:hover,
+.link-clients:focus {
   border-color: var(--nav-text-color);
 }
 
 .clients-svg {
   fill: var(--svg-link-color);
-  margin-top: 16px;
-  margin-bottom: 16px;
-  margin-left: 32px;
-  margin-right: 32px;
 }
 
-.box-clients:hover svg,
-.box-clients:focus svg {
+.link-clients:hover svg,
+.link-clients:focus svg {
   fill: var(--nav-text-color);
 }
 
